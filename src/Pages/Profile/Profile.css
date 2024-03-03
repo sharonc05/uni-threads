@@ -1,0 +1,48 @@
+/* Profile.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust the space between each element */
+    /* Optionally, adjust the top margin if you want to move the entire container up */
+    margin-top: 0px; /* Negative value moves the content up */
+}
+
+.profile-title {
+    font-size: 24px; /* Adjust based on actual size */
+    font-weight: bold; /* Make text bold */
+    color: #000000; /* Dark green color */
+    text-align: center; /* Center text horizontally */
+    margin-bottom: 70px; /* Reduced space between the title and picture */
+}
+
+.profile-picture {
+    /* Adjusted styles for profile picture container */
+    width: 100px; /* Adjust based on actual size */
+    height: 100px; /* Adjust based on actual size */
+    scale: 2.5; /* Adjust if necessary to reduce size */
+    background-color: #ddd; /* Placeholder color */
+    border-radius: 50%; /* Circular shape */
+    margin-bottom: 60px; /* Reduced space between the picture and buttons */
+}
+
+.button {
+    background-color: #55946b; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    text-transform: uppercase; /* Optional: capitalize letters */
+    font-weight: bold; /* Make text bold */
+    width: 200px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change mouse cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    scale: 1.5;
+    margin-bottom:10px; /* Keep or adjust based on your layout needs */
+}
+
+.button:hover {
+    background-color: #3d7254; /* Darken button color on hover */
+}
+
+/* You can keep the specific styles for different buttons as is, or adjust margins similarly if needed */

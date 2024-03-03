@@ -5,7 +5,10 @@
     align-items: center;
     gap: 20px; /* Adjust the space between each element */
     /* Optionally, adjust the top margin if you want to move the entire container up */
-    margin-top: 0px; /* Negative value moves the content up */
+    margin-top: -30px; /* Negative value moves the content up */
+    position: relative; /* Ensure container is positioned relative to its normal flow */
+    z-index: 1; /* Ensure it stays above any overlapped content */
+
 }
 
 .profile-title {
@@ -43,6 +46,12 @@
 
 .button:hover {
     background-color: #3d7254; /* Darken button color on hover */
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-top: 0; /* Adjust for small screens */
+    }
 }
 
 /* You can keep the specific styles for different buttons as is, or adjust margins similarly if needed */

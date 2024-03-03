@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Newsreader', serif;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #374e3f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +23,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Space Grotesk', sans-serif; /* Custom font */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #374e3f;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +38,12 @@
     transform: rotate(360deg);
   }
 }
+/* 
+@font-face {
+  font-family: 'Newsreader';
+  src: url('./Components/Assets/Newsreader-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Newsreader', serif;
+} */

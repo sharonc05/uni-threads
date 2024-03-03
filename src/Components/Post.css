@@ -1,0 +1,27 @@
+.product-container {
+    display: flex;
+    justify-content: center; /* horizontally center the container */
+    height: 80vh; /* set height to 100% of the viewport height */
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px; /* adjust the gap between product posts */
+}
+
+.product-post {
+    flex: 0 0 calc(33.33% - 16px); /* set the width of each product post to one-third of the container width */
+    border: 1px solid #ccc; /* add border around each product post */
+    padding: 16px;
+    border-radius: 8px; /* add border-radius for rounded corners */
+    max-width: 250px; /* limit maximum width of each product post */
+  }
+  
+  @media (max-width: 768px) {
+    .product-post {
+      flex: 0 0 calc(50% - 16px); /*set the width of each product post to one-half of the container width on smaller screens */
+    }
+  }
+  

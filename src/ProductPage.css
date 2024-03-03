@@ -1,0 +1,17 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust the spacing between the search bar and posts */
+}
+  
+.search-input {
+    width: 300px; /* Adjust the width of the search bar */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-icon {
+    margin-left: -30px; /* Adjust the position of the search icon */
+}
+  

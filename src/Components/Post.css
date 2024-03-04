@@ -1,27 +1,130 @@
+
 .product-container {
     display: flex;
-    justify-content: center; /* horizontally center the container */
-    height: 80vh; /* set height to 100% of the viewport height */
+    justify-content: flex-start; /* horizontally center the container */
+    margin-top: 90px;
+    margin-left: 95px;
 }
 
 .product-gallery {
+    /* left: 90px; Adjusted the left position */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px; /* adjust the gap between product posts */
+    justify-content:flex-start;
+    max-width: calc(100% - 192px);
 }
 
 .product-post {
-    flex: 0 0 calc(33.33% - 16px); /* set the width of each product post to one-third of the container width */
+    width: calc((100% - 3*16px)/4);
+    /* flex: 0 0 calc(33.33% - 16px); set the width of each product post to one-third of the container width */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin-bottom: 16px;
     border: 1px solid #ccc; /* add border around each product post */
     padding: 16px;
     border-radius: 8px; /* add border-radius for rounded corners */
-    max-width: 250px; /* limit maximum width of each product post */
+    /* max-width: calc(33.33% - 16px); limit maximum width of each product post */
+    box-sizing: border-box; /* include padding and border in the element's total width */
+    height: 400px;
+    text-decoration: none;
+    color: inherit;
   }
   
   @media (max-width: 768px) {
     .product-post {
-      flex: 0 0 calc(50% - 16px); /*set the width of each product post to one-half of the container width on smaller screens */
+        width: calc((100%-16px) /2);
+      /* flex: 0 0 calc(50%); set the width of each product post to one-half of the container width on smaller screens */
+      /* max-width: calc(50% - 16px); limit maximum width of each product post on smaller screens */
     }
   }
-  
+
+.product-title {
+    /* Windsor Red Prom Dress */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    /* identical to box height, or 26px */
+
+    color: #000000;
+}
+
+
+.product-description{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+line-height: 10px;
+
+color: #000000;
+}
+
+.product-author{
+    /* UCLA @sharonchen */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+line-height: 7px;
+
+color: #6D6D6D;
+
+
+}
+
+.product-date{
+    /* Windsor Red Prom Dress */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 130%;
+/* identical to box height, or 26px */
+
+color: #000000;
+line-height: 5px;
+
+
+}
+
+.product-price {
+    /* Buy: $100 Rent: $30 */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 26px */
+
+    color: #426B1F;
+    line-height: 5px;
+
+
+}
+
+.product-size {
+    /* Buy: $100 Rent: $30 */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 26px */
+
+    color: #000000;
+    line-height: 15px;
+
+
+}

@@ -6,6 +6,7 @@ import LoginSignup from './Pages/LoginSignup/LoginSignup';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
 import Homepage from './Components/Homepage/Homepage';
+import PostDetails from './PostDetails';
 
 
 const AppWrapper = () => {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<LoginSignup />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/post/:id" element={<PostDetails />} />  
         {/* Redirect from root to /login */}
         <Route path="/" element={<Navigate to="/login" replace />} />
         {/* Optionally, handle unmatched routes */}

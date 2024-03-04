@@ -1,48 +1,40 @@
-import * as React from 'react';
+import React from 'react';
 import './App.css';
-import LoginSignup from './Pages/LoginSignup/LoginSignup';
-import Profile from './Pages/Profile/Profile';
 import ProductPage from './ProductPage';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Profile from './Pages/Profile/Profile';
+import LoginSignup from './Pages/LoginSignup/LoginSignup';
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import NavBar from './Components/NavBar/NavBar';
+import Homepage from './Components/Homepage/Homepage';
 
-function App() {
+
+const AppWrapper = () => {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route path="/productpage" element={<ProductPage />} />
-        </Routes>
+      <App />
     </BrowserRouter>
   );
 }
 
-export default App;
-import logo from './logo.svg';
-import './App.css';
-import Homepage from './Homepage';
 function App() {
-  return (
-    
+  let location = useLocation();
 
-    <div className="App">
-      <Homepage/>
-      {/* 
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-  */}
-    </div>
+  return (
+    <>
+      {location.pathname !== "/login" && <NavBar />}
+      
+      <Routes>
+        <Route path="/productpage" element={<ProductPage />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/login" element={<LoginSignup />} />
+        <Route path="/homepage" element={<Homepage />} />
+        {/* Redirect from root to /login */}
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        {/* Optionally, handle unmatched routes */}
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </>
   );
 }
 
-export default App;
+export default AppWrapper;

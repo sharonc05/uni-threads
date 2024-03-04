@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+  padding: 0 96px; /* Add padding on the sides */
+  height: 112px;
+  /* background-color: #f0f0f0; Light gray background */
+  margin-top: -20px; /* Negative value moves the content up */
+}
+
+.logo {
+  position: absolute;
+  width: 89px;
+  height: 32px;
+  left: 96px;
+  top: 41px;
+
+  flex-grow: 0; /* Do not allow the items to grow */
+  flex-shrink: 0; /* Do not allow the items to shrink */
+
+  font-family: 'Newsreader', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #426B1F;
+}
+
+.navLink {
+  position: absolute;
+  height: 21px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  flex-grow: 0; /* Do not allow the items to grow */
+  flex-shrink: 0; /* Do not allow the items to shrink */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.exploreGallery {
+  width: 124px;
+  right: 512px;
+  top: 46px;
+}
+
+.aboutUs {
+  width: 71px;
+  right: 403px;
+  top: 45.5px;
+}
+
+.profile {
+  width: 49px;
+  right: 283px;
+  top: 45.5px;
+}
+
+.cartButton {
+  position: absolute;
+  width: 126px;
+  height: 48px;
+  right: 96px;
+  top: 32px;
+  background: #426B1F;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 600;
+
+  flex-grow: 0; /* Do not allow the items to grow */
+  flex-shrink: 0; /* Do not allow the items to shrink */
+
+}

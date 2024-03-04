@@ -1,0 +1,33 @@
+.post-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-details-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-details-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .post-details-title {
+    font-size: 2em;
+    margin-top: 0.5em;
+  }
+  
+  .post-details-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Add more styles as needed */

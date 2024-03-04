@@ -1,17 +1,45 @@
-.search-container {
+
+
+
+/* Gallery */
+.title {
+    /* position: absolute; */
+    top: 20px; /* Adjusted the top position */
+    left: 1px; /* Adjusted the left position */
+    width: 199px;
+    height: 77px;
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 120%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Adjust the spacing between the search bar and posts */
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+
+.search-container {
+    /* Group 7 */
+
+    position: absolute;
+    width: 1055px;
+    height: 85px;
+    left: 96px;
+    top: 140px;
+
+
+
 }
   
 .search-input {
-    width: 300px; /* Adjust the width of the search bar */
+    width: 400px; /* Adjust the width of the search bar */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .search-icon {
-    margin-left: -30px; /* Adjust the position of the search icon */
+    margin-left: 10px; /* Adjust the position of the search icon */
 }
-  

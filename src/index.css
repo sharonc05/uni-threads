@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,4 +12,41 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.UniFit-Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+}
+
+.welcome-text {
+  margin-top: 20px; /* Adjust margin to create space between title and paragraph */
+}
+
+.title {
+  height: 77px;
+  left: 217px;
+  right: 203px;
+  top: 279px;
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+
+.myButton {
+  width: 254px;
+  height: 64px;
+  left: calc(50% - 254px/2 - 5px);
+  top: 481px;
+  background: #426B1F;
+  border-radius: 8px;
+  color: white;
+  margin-top: 20px;
 }
